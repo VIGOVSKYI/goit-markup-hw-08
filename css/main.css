@@ -784,6 +784,10 @@ a {
   }
 }
 @media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
   .clients-list-link {
     width: 170px;
     margin-right: 0;
