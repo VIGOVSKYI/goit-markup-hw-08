@@ -184,10 +184,18 @@ a {
 }
 
 .mobile-menu_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
   position: relative;
   padding-left: 50px;
   padding-top: 48px;
   padding-bottom: 48px;
+}
+
+.mobile-menu-list {
+  margin-bottom: auto;
 }
 
 .mobile-menu_close-button {
@@ -201,10 +209,6 @@ a {
 }
 .mobile-menu_close-button:hover, .mobile-menu_close-button:focus {
   fill: var(--brand-color);
-}
-
-.mobile-menu-list {
-  margin-bottom: 302px;
 }
 
 .mobile-menu_link {
@@ -292,7 +296,7 @@ a {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     color: #212121;
     padding-top: 21px;
@@ -439,7 +443,7 @@ a {
   font-style: normal;
   font-weight: 900;
   font-size: 26px;
-  line-height: 42px;
+  line-height: 1.6;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -513,8 +517,8 @@ a {
 .title-team {
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
+  font-size: 28px;
+  line-height: 1.8;
   color: var(--title-color);
   text-align: center;
   letter-spacing: 0.03em;
@@ -603,6 +607,10 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .title-team {
+    font-size: 28px;
+    line-height: 1.8;
+  }
   .list-team {
     display: flex;
     justify-content: center;
@@ -629,6 +637,8 @@ a {
     padding-bottom: 94px;
   }
   .title-team {
+    font-size: 36px;
+    line-height: 1.2;
     margin-bottom: 50px;
   }
 }
@@ -638,10 +648,11 @@ a {
 }
 
 .advantage-list__items {
-  width: 100%;
-}
-.advantage-list__items:not(:last-child) {
   margin-bottom: 30px;
+}
+
+.advantage-list__items:last-child {
+  margin-bottom: 0;
 }
 
 .advantage-list__icon {
@@ -678,16 +689,13 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-  .advantage-list__items {
-    width: 354px;
-  }
   .advantage-list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
   }
-  .advantage-list__items:not(:last-child) {
-    margin-bottom: 0px;
+  .advantage-list__items {
+    width: 354px;
   }
   .advantage-list__type {
     text-align: start;
@@ -696,6 +704,7 @@ a {
 @media screen and (min-width: 1200px) {
   .advantage-list__items {
     width: 270px;
+    margin-bottom: 0;
   }
   .advantage {
     padding-top: 94px;
@@ -709,14 +718,14 @@ a {
 
 .clients-title {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
   color: var(--title-color);
   font-weight: 700;
   font-style: normal;
-  font-size: 36px;
-  line-height: 1.2;
-  letter-spacing: 3%;
+  font-size: 28px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
 }
 
 .clients-list {
@@ -753,16 +762,20 @@ a {
   fill: var(--brand-color);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   .clients-list-link {
     width: 210px;
   }
 }
 @media screen and (min-width: 768px) {
+  .clients-title {
+    font-size: 28px;
+    line-height: 1.8;
+  }
   .clients-list-link {
     width: 226px;
   }
@@ -773,9 +786,10 @@ a {
 @media screen and (min-width: 1200px) {
   .clients-list-link {
     width: 170px;
-  }
-  .clients-list-link {
     margin-right: 0;
+  }
+  .clients-title {
+    margin-bottom: 50px;
   }
 }
 .section-portfolio {
@@ -1380,7 +1394,7 @@ a {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: var(--brand-color);
@@ -1403,7 +1417,9 @@ a {
     min-height: 609px;
   }
   .backdrop-label-check {
-    font-size: 11px;
-    line-height: 1.6;
+    font-size: 12px;
+  }
+  .backdrop-checkbox-contract {
+    font-size: 12px;
   }
 }/*# sourceMappingURL=main.css.map */

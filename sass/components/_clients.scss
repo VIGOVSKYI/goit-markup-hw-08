@@ -5,14 +5,14 @@
 
 .clients-title {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
   color: var(--title-color);
   font-weight: 700;
   font-style: normal;
-  font-size: 36px;
-  line-height: 1.2;
-  letter-spacing: 3%;
+  font-size: 28px;
+    line-height: 1.8;
+  letter-spacing: 0.03em;
 }
 
 .clients-list {
@@ -55,6 +55,11 @@
 
 
 @media screen and (max-width: 767px) {
+  .clients {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+
 
   .clients-list-link {
     width: 210px;
@@ -62,11 +67,15 @@
 }
 
 @media screen and (min-width: 768px) {
-  .clients {
-      padding-top: 60px;
-      padding-bottom: 60px;
-    }
-
+  // .clients {
+  //     padding-top: 60px;
+  //     padding-bottom: 60px;
+  //   }
+.clients-title {
+  font-size: 28px;
+  line-height: 1.8;
+  
+}
   .clients-list-link {
     width: 226px;
   }
@@ -75,12 +84,13 @@
   }
 }
 @media screen and (min-width: 1200px) {
-  .clients-list-link {
-    width: 170px;
-  }
 
   .clients-list-link {
+    width: 170px;
     margin-right: 0;
+  }
+    .clients-title {
+      margin-bottom: 50px;
   }
 }
 
