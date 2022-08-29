@@ -54,11 +54,7 @@
 }
 
 
-@media screen and (min-width: 480px) {
-  .clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
+@media screen and (max-width: 767px) {
 
   .clients-list-link {
     width: 210px;
@@ -66,6 +62,11 @@
 }
 
 @media screen and (min-width: 768px) {
+  .clients {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+
   .clients-list-link {
     width: 226px;
   }

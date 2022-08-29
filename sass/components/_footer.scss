@@ -1,5 +1,4 @@
 .page-footer {
-  //   display: flex;
   text-align: center;
   background-color: #2f303a;
   padding-top: 60px;
@@ -18,9 +17,6 @@
     color: var(--brand-color);
   }
 }
-// .container-footer {
-//   display: flex;
-// }
 .container-address {
   margin-top: 20px;
   margin-bottom: 60px;
@@ -74,10 +70,6 @@
 .studio-header {
   color: var(--title-color);
 }
-
-// .social-list-icon-footer {
-//   margin-left: 70px;
-// }
 
 .footer-list {
   display: flex;
@@ -157,6 +149,11 @@
 .container-address {
    text-align: start;
 }
-
+.container-address .mail {
+  margin-bottom: 9px;
+}
+.address {
+  margin-bottom: 9px;
+}
 
 }

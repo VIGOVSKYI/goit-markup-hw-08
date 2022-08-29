@@ -44,20 +44,30 @@
 }
 
 @media screen and (min-width: 768px) {
-  .advantage-list__items {
-    width: 354px;
-  }
+
   .advantage-list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
   }
-  .advantage-list__type {
+  .advantage-list__items {
+    width: 354px;
+    &: {
+            margin-bottom: 0px;
+          }
+        }
+  
+   .advantage-list__type {
     text-align: start;
   }
+
 }
 @media screen and (min-width: 1200px) {
   .advantage-list__items {
       width: 270px;
     }
+        .advantage {
+          padding-top: 94px;
+          padding-bottom: 94px;
+        }
 }
